@@ -1,0 +1,69 @@
+:root{
+  --theme: pink;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  outline: 0;
+  font-size: 0.28rem;
+}
+
+a,
+button,
+input {
+  -webkit-appearance: none;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font: 0px '微软雅黑';
+}
+
+.icon {
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background: #f2f2f2;
+  overflow: scroll;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+  .tab-bar ~ .bottom-padding {
+    height: 1.2rem;
+  }
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
