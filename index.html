@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHUI</title>
+    <script type="module" crossorigin src="./assets/index-0d1ede7e.js"></script>
+    <link rel="stylesheet" href="./assets/index-b5f8a279.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    
+    <script>
+        (function (docs, win) {
+            const htmlSize = () => {
+                const value = document.documentElement.clientWidth;
+                const deviceWidth = Math.min(750, value);
+                document.documentElement.style.fontSize = `${100 * (deviceWidth / 750)}px`;
+            };
+            htmlSize();
+            window.onresize = function () {
+                htmlSize();
+            };
+        })(document, window);
+    </script>
+  </body>
+</html>
