@@ -15,11 +15,20 @@ jobs:
         with:
           persist-credentials: false
 
-      # 安装node.js
-      - name: Use Node.js
-        uses: actions/setup-node@v3
+      # 设置使用 Node.js 版本
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
         with:
-          node-version: "20.10.0"
+          node-version: ${{ matrix.node-version }}
+
+      # 使用 最新的 PNPM
+      # 你也可以指定为具体的版本
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: latest
+          # version: 9
+          run_install: false
 
       # 下载依赖、打包项目
       - name: Install and Build
