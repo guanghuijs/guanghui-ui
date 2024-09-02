@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { toast } from 'vue-ghui';
+  import { toast } from 'guanghui-ui';
   import { NavBar as HNavBar } from '#/components';
 </script>
 

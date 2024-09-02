@@ -6,8 +6,8 @@
 </template>
 <script lang="ts" setup>
   import { ref, unref } from 'vue';
-  import { toast } from 'vue-ghui';
-  import type { TVerificationCode } from 'vue-ghui/type';
+  import { toast } from 'guanghui-ui';
+  import type { TVerificationCode } from 'guanghui-ui/type';
   const codeRef = ref<TVerificationCode | null>();
   const getCode = () => {
     const code = unref(codeRef)?.getCode();

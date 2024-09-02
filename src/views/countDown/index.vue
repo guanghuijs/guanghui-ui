@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { useCountDown } from 'vue-ghui';
+  import { useCountDown } from 'guanghui-ui';
   const [register, { resume, pause }] = useCountDown({
     time: '30m',
   });

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { toast, hiddenToast } from 'vue-ghui';
+  import { toast, hiddenToast } from 'guanghui-ui';
 </script>
 
 <template>
