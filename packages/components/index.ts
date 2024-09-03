@@ -1,29 +1,33 @@
 import type { App } from 'vue';
 
-import { Button } from './Button';
-import { Calendar } from './Calendar';
-import { Card } from './Card';
-import { Checkbox } from './Checkbox';
-import { CountDown } from './CountDown';
-import { Collapse, CollapseItem } from './Collapse';
-export { useCountDown } from './CountDown';
-import { Divider } from './Divider';
-import { Empty } from './Empty';
-import { Icon } from './Icon';
-import { Loading } from './Loading';
-import { NavBar } from './NavBar';
-import { Popup } from './Popup';
-import { ProgressBar } from './ProgressBar';
-import { Space } from './Space';
-import { Stepper } from './Stepper';
-// import { Swiper } from './Swiper';
-import { SwiperCell } from './SwiperCell';
-import { Switch } from './Switch';
-import { Tree } from './Tree';
-export * from './Toast';
-export * from './Notify';
-import { VerificationCode } from './VerificationCode';
-import { Upload } from './Upload';
+import { Button } from './src/Button';
+import { Calendar } from './src/Calendar';
+import { Card } from './src/Card';
+import { Checkbox } from './src/Checkbox';
+import { CountDown } from './src/CountDown';
+import { Collapse, CollapseItem } from './src/Collapse';
+export { useCountDown } from './src/CountDown';
+import { Divider } from './src/Divider';
+import { Empty } from './src/Empty';
+import { Icon } from './src/Icon';
+import { Loading } from './src/Loading';
+import { NavBar } from './src/NavBar';
+import { Popup } from './src/Popup';
+import { ProgressBar } from './src/ProgressBar';
+import { Rate } from './src/Rate';
+import { Space } from './src/Space';
+import { Stepper } from './src/Stepper';
+// import { Swiper } from './src/Swiper';
+import { SwiperCell } from './src/SwiperCell';
+import { Switch } from './src/Switch';
+import { Tree } from './src/Tree';
+export * from './src/Toast';
+export * from './src/Notify';
+import {
+  VerificationCode,
+  type TVerificationCode,
+} from './src/VerificationCode';
+import { Upload } from './src/Upload';
 
 // 实现组件库全局注册
 const HUI = {
@@ -43,6 +47,7 @@ const HUI = {
       NavBar,
       Popup,
       ProgressBar,
+      Rate,
       Space,
       Stepper,
       // Swiper,
@@ -73,6 +78,7 @@ export {
   NavBar,
   Popup,
   ProgressBar,
+  Rate,
   Space,
   Stepper,
   // Swiper,
@@ -81,6 +87,7 @@ export {
   Tree,
   VerificationCode,
   Upload,
+  type TVerificationCode,
 };
 
 export default HUI;

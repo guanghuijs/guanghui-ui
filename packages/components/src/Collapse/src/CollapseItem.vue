@@ -1,5 +1,10 @@
+<script lang="ts">
+  export default {
+    name: 'HCollapseItem',
+  };
+</script>
 <script setup lang="ts">
-  import { Icon as HIcon } from '#/components';
+  import { Icon as HIcon } from '@ghui/components';
   import { inject, onMounted, ref, getCurrentInstance, watch } from 'vue';
 
   const parent = getCurrentInstance()?.parent;

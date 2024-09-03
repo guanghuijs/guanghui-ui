@@ -4,7 +4,7 @@
   };
 </script>
 <script setup lang="ts">
-  import { Icon as HIcon } from '#/components';
+  import { Icon as HIcon } from '@ghui/components';
   const props = withDefaults(
     defineProps<{
       value?: boolean;

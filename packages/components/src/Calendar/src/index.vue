@@ -6,7 +6,7 @@
 <script setup lang="ts">
   import { weeks, DateHelper } from './helper';
   import { computed, ref, unref, watch } from 'vue';
-  import { toast } from '#/components';
+  import { toast } from '@ghui/components';
 
   const props = defineProps<{
     modelValue?: string;

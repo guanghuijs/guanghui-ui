@@ -1,10 +1,10 @@
 <script lang="ts">
   export default {
-    name: 'NavBar',
+    name: 'HNavBar',
   };
 </script>
 <script setup lang="ts">
-  import { Icon as HIcon } from '#/components';
+  import { Icon as HIcon } from '@ghui/components';
   withDefaults(
     defineProps<{
       title?: string;
