@@ -2,7 +2,7 @@
   <HCard title="图形验证码">
     <VerificationCode ref="codeRef"></VerificationCode>
   </HCard>
-  <HButton block @click="getCode">获取验证码</HButton>
+  <h-button block @click="getCode">获取验证码</h-button>
 </template>
 <script lang="ts" setup>
   import { ref, unref } from 'vue';

@@ -17,7 +17,7 @@
     }
   );
 
-  const emits = defineEmits<{
+  defineEmits<{
     (e: 'iconClick'): void;
   }>();
 

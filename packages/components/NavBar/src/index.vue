@@ -1,3 +1,8 @@
+<script lang="ts">
+  export default {
+    name: 'NavBar',
+  };
+</script>
 <script setup lang="ts">
   import { Icon as HIcon } from '#/components';
   withDefaults(

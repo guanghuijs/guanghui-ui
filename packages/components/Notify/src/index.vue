@@ -1,8 +1,8 @@
-<template>
-  <Transition>
-    <div class="notify-main" :class="position" v-if="show">{{ message }}</div>
-  </Transition>
-</template>
+<script lang="ts">
+  export default {
+    name: 'HNotify',
+  };
+</script>
 <script lang="ts" setup>
   import { computed, onMounted, onUnmounted, ref, unref } from 'vue';
 
@@ -60,6 +60,13 @@
     clearTimeout(unref(time));
   });
 </script>
+
+<template>
+  <Transition>
+    <div class="notify-main" :class="position" v-if="show">{{ message }}</div>
+  </Transition>
+</template>
+
 <style lang="less" scoped>
   .v-enter-active,
   .v-leave-active {

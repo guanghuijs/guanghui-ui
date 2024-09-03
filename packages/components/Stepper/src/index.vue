@@ -29,8 +29,8 @@
     afterDisable: boolean;
   }>(() => {
     const { value, step, range } = props;
-    const prevDisable = value - step < range[0] ? true : false;
-    const afterDisable = value + step > range[1] ? true : false;
+    const prevDisable = value - step < range[0];
+    const afterDisable = value + step > range[1];
     return {
       prevDisable,
       afterDisable,

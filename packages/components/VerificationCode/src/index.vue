@@ -1,11 +1,3 @@
-<template>
-  <div
-    class="comp-main"
-    :style="{ background: mock('@color') }"
-    v-html="codeHtml"
-    @click="verificationCodeInit"
-  ></div>
-</template>
 <script lang="ts">
   export default {
     name: 'VerificationCode',
@@ -22,8 +14,7 @@
   const boxBg = ref(mock('@color'));
 
   let code = '';
-
-  const emits = defineEmits(['getCode']);
+  defineEmits(['getCode']);
 
   const verificationCodeInit = () => {
     codeHtml.value = '';
@@ -89,6 +80,16 @@
     verificationCodeInit();
   });
 </script>
+
+<template>
+  <div
+    class="comp-main"
+    :style="{ background: mock('@color') }"
+    v-html="codeHtml"
+    @click="verificationCodeInit"
+  ></div>
+</template>
+
 <style lang="less" scoped>
   .comp-main {
     height: 40px;

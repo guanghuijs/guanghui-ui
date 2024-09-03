@@ -7,7 +7,7 @@
   import Spinner from './spinner.vue';
   import Circular from './circular.vue';
 
-  const props = withDefaults(
+  withDefaults(
     defineProps<{
       type?: 'circular' | 'spinner';
       color?: string;
@@ -23,5 +23,3 @@
   <circular :color="color" v-if="type === 'circular'" />
   <spinner :color="color" v-else />
 </template>
-
-<style scoped lang="less"></style>

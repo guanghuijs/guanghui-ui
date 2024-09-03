@@ -64,7 +64,7 @@
             PROPS.value.time =
               Number(time.slice(0, time.length - 1)) * 3600 * 1000;
           }
-        } else if (typeof time === 'number') {
+        } else {
           PROPS.value.time = time * 1000;
         }
       },

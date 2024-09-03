@@ -1,11 +1,3 @@
-<template>
-  <div class="card">
-    <div class="card-title">{{ title }}</div>
-    <div class="card-content">
-      <slot></slot>
-    </div>
-  </div>
-</template>
 <script lang="ts">
   export default {
     name: 'HCard',
@@ -14,6 +6,16 @@
 <script lang="ts" setup>
   defineProps<{ title?: string }>();
 </script>
+
+<template>
+  <div class="card">
+    <div class="card-title">{{ title }}</div>
+    <div class="card-content">
+      <slot></slot>
+    </div>
+  </div>
+</template>
+
 <style lang="less" scoped>
   .card {
     margin: 0.3rem 0.25rem;

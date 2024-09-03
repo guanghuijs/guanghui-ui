@@ -1,8 +1,3 @@
-<template>
-  <div class="btn" :class="type">
-    <slot>按钮</slot>
-  </div>
-</template>
 <script lang="ts">
   export default {
     name: 'HButton',
@@ -13,6 +8,13 @@
     type?: 'primary' | 'success' | 'danger' | 'warning';
   }>();
 </script>
+
+<template>
+  <div class="btn" :class="type">
+    <slot>按钮</slot>
+  </div>
+</template>
+
 <style lang="less" scoped>
   .btn {
     padding: 0.15rem 0.3rem;

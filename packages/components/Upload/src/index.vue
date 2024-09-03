@@ -1,3 +1,8 @@
+<script lang="ts">
+  export default {
+    name: 'HUpload',
+  };
+</script>
 <script setup lang="ts">
   import { ref } from 'vue';
   const imagesList = ref<string[]>([]);
@@ -24,7 +29,7 @@
 
 <template>
   <div class="comp-container">
-    <img v-for="img in imagesList" :key="img" :src="img" />
+    <img v-for="img in imagesList" :key="img" :src="img" alt="" />
     <div class="upload" v-if="imagesList.length <= fileLength - 1">
       <input type="file" @change="fn" accept=".jpg,.jpeg,.png" />
       <img src="./upload_tips.png" alt="" />

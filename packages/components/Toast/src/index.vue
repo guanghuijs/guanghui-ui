@@ -1,13 +1,3 @@
-<template>
-  <Transition>
-    <div class="toast-out" v-if="show">
-      <div class="toast-main">
-        <i v-if="icon" :class="`iconfont icon-${icon}`"></i>
-        <p>{{ message }}</p>
-      </div>
-    </div>
-  </Transition>
-</template>
 <script lang="ts" setup>
   import { onMounted, onUnmounted, ref, unref } from 'vue';
   const props = defineProps({
@@ -38,6 +28,18 @@
     clearTimeout(unref(time));
   });
 </script>
+
+<template>
+  <Transition>
+    <div class="toast-out" v-if="show">
+      <div class="toast-main">
+        <i v-if="icon" :class="`iconfont icon-${icon}`"></i>
+        <p>{{ message }}</p>
+      </div>
+    </div>
+  </Transition>
+</template>
+
 <style lang="less" scoped>
   .v-enter-active,
   .v-leave-active {

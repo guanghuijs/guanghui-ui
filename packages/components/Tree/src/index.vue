@@ -1,18 +1,3 @@
-<template>
-  <div class="tree">
-    <div class="tree-tit flex-star">
-      <span>{{ threeData.name }}</span>
-      <span v-if="calIsOpen()" @click="toggle">[{{ open ? '-' : '+' }}]</span>
-    </div>
-    <div class="tree-count" v-if="calIsOpen()" v-show="open">
-      <HTree
-        v-for="(data, index) in threeData.children"
-        :key="index"
-        :threeData="data"
-      ></HTree>
-    </div>
-  </div>
-</template>
 <script lang="ts">
   export default {
     name: 'HTree',
@@ -35,6 +20,23 @@
     open.value = !open.value;
   };
 </script>
+
+<template>
+  <div class="tree">
+    <div class="tree-tit flex-star">
+      <span>{{ threeData.name }}</span>
+      <span v-if="calIsOpen()" @click="toggle">[{{ open ? '-' : '+' }}]</span>
+    </div>
+    <div class="tree-count" v-if="calIsOpen()" v-show="open">
+      <HTree
+        v-for="(data, index) in threeData.children"
+        :key="index"
+        :threeData="data"
+      ></HTree>
+    </div>
+  </div>
+</template>
+
 <style lang="less" scoped>
   .tree {
     display: flex;

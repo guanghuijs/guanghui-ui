@@ -4,7 +4,6 @@
   import { useSwiper } from './swiper';
 
   const wrapRef = ref();
-
   onMounted(() => {
     useSwiper(wrapRef.value);
   });

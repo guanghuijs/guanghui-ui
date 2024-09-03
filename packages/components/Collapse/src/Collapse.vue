@@ -1,4 +1,8 @@
-<!--折叠面板-->
+<script lang="ts">
+  export default {
+    name: 'HCollapse',
+  };
+</script>
 <script setup lang="ts">
   import { getCurrentInstance, onMounted, provide, ref } from 'vue';
   import type { CollapseActive } from './type';

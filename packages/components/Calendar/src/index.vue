@@ -6,7 +6,7 @@
 <script setup lang="ts">
   import { weeks, DateHelper } from './helper';
   import { computed, ref, unref, watch } from 'vue';
-  import { toast } from '../../Toast';
+  import { toast } from '#/components';
 
   const props = defineProps<{
     modelValue?: string;
@@ -31,18 +31,12 @@
 
   const today = computed<boolean>(() => {
     const { year, month } = DateHelper(new Date());
-    if (year === unref(__date).year && month === unref(__date).month) {
-      return true;
-    }
-    return false;
+    return year === unref(__date).year && month === unref(__date).month;
   });
 
   const selectDay = computed<boolean>(() => {
     const { year, month } = DateHelper(_date.value);
-    if (year === unref(__date).year && month === unref(__date).month) {
-      return true;
-    }
-    return false;
+    return year === unref(__date).year && month === unref(__date).month;
   });
 
   const toggleMonth = (type: number) => {

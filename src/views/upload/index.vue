@@ -1,14 +1,11 @@
-<script setup lang="ts">
-  import { Upload as HUpload } from '#/components';
-  import HCard from '#/components/Card/src/index.vue';
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <h-card title="文件上传,默认只能传一张">
-    <HUpload />
+    <h-upload />
   </h-card>
   <h-card title="指定可传文件数">
-    <HUpload :file-length="8" />
+    <h-upload :file-length="8" />
   </h-card>
 </template>
 

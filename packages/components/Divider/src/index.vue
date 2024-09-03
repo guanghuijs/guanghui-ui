@@ -1,10 +1,3 @@
-<template>
-  <div class="divider-comp" :style="{ textAlign: orientation }">
-    <span>
-      <slot></slot>
-    </span>
-  </div>
-</template>
 <script lang="ts">
   export default {
     name: 'HDivider',
@@ -15,6 +8,15 @@
     orientation?: 'left' | 'right' | 'center';
   }>();
 </script>
+
+<template>
+  <div class="divider-comp" :style="{ textAlign: orientation }">
+    <span>
+      <slot></slot>
+    </span>
+  </div>
+</template>
+
 <style lang="less" scoped>
   .divider-comp {
     position: relative;
