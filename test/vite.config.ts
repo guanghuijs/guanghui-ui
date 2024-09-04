@@ -20,9 +20,7 @@ export default defineConfig(() => {
     build: {
       outDir: '../dist',
       emptyOutDir: true,
-      rollupOptions: {
-        external: ['@ghui/components'],
-      },
+      rollupOptions: {},
     },
     resolve: {
       alias: {
