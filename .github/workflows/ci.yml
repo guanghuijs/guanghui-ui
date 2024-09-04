@@ -33,6 +33,7 @@ jobs:
       # 下载依赖、打包项目
       - name: Install and Build
         run: |
+          cd test
           pnpm install
           pnpm build
 
