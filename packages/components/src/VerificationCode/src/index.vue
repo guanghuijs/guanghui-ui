@@ -1,6 +1,6 @@
 <script lang="ts">
   export default {
-    name: 'VerificationCode',
+    name: 'HVerificationCode',
   };
 </script>
 <script lang="ts" setup>

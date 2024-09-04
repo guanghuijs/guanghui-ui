@@ -1,7 +1,3 @@
-<script setup lang="ts">
-  import { Loading as h-loading } from '@ghui/components';
-</script>
-
 <template>
   <h-card title="动画类型">
     <h-space size="20">
@@ -16,5 +12,3 @@
     </h-space>
   </h-card>
 </template>
-
-<style scoped lang="less"></style>
