@@ -1,0 +1,1 @@
+import{_ as c,c as _,a as e,w as n,F as r,b as a,o as s}from"./index-3981fe78.js";const l={};function d(f,p){const t=a("h-upload"),o=a("h-card");return s(),_(r,null,[e(o,{title:"文件上传,默认只能传一张"},{default:n(()=>[e(t)]),_:1}),e(o,{title:"指定可传文件数"},{default:n(()=>[e(t,{"file-length":8})]),_:1})],64)}const m=c(l,[["render",d]]);export{m as default};

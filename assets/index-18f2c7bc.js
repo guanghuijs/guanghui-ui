@@ -1,0 +1,1 @@
+import{_ as r,c as s,a as o,w as n,F as c,b as l,o as d,e as a}from"./index-3981fe78.js";const _={};function f(i,e){const t=l("h-card");return d(),s(c,null,[o(t,{title:"普通用法"},{default:n(()=>e[0]||(e[0]=[a("卡片")])),_:1}),o(t,{title:"无背景模式",concise:""},{default:n(()=>e[1]||(e[1]=[a("卡片")])),_:1})],64)}const p=r(_,[["render",f]]);export{p as default};

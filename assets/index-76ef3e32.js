@@ -1,1 +1,0 @@
-import{_ as c,c as r,a as e,w as n,F as _,b as a,o as s}from"./index-4a9eefc9.js";import"@ghui/components";const l={};function d(p,f){const t=a("h-upload"),o=a("h-card");return s(),r(_,null,[e(o,{title:"文件上传,默认只能传一张"},{default:n(()=>[e(t)]),_:1}),e(o,{title:"指定可传文件数"},{default:n(()=>[e(t,{"file-length":8})]),_:1})],64)}const u=c(l,[["render",d]]);export{u as default};
