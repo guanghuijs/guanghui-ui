@@ -5,7 +5,6 @@ import routes from '~pages';
 const metaRoutes = routes.map((item) => {
   return Object.assign(item, { meta: routeMetaList[item.name as string] });
 });
-console.log(metaRoutes);
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -19,4 +18,5 @@ const router = createRouter({
   ],
 });
 
+export { metaRoutes };
 export default router;
