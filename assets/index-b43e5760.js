@@ -1,1 +1,0 @@
-import{_ as o,c as n,a as t,w as a,F as r,b as s,o as _,e as c}from"./index-0d1ede7e.js";const l={};function d(f,i){const e=s("h-card");return _(),n(r,null,[t(e,{title:"普通用法"},{default:a(()=>[c("卡片")]),_:1}),t(e,{title:"无背景模式",concise:""},{default:a(()=>[c("卡片")]),_:1})],64)}const p=o(l,[["render",d]]);export{p as default};

@@ -1,0 +1,1 @@
+import{_ as a,c as s,a as o,w as n,F as c,b as l,o as d,e as r}from"./index-4a9eefc9.js";import"@ghui/components";const _={};function i(f,e){const t=l("h-card");return d(),s(c,null,[o(t,{title:"普通用法"},{default:n(()=>e[0]||(e[0]=[r("卡片")])),_:1}),o(t,{title:"无背景模式",concise:""},{default:n(()=>e[1]||(e[1]=[r("卡片")])),_:1})],64)}const u=a(_,[["render",i]]);export{u as default};
