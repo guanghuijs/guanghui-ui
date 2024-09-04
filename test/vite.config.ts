@@ -18,7 +18,7 @@ export default defineConfig(() => {
       }),
     ],
     build: {
-      outDir: 'preview',
+      outDir: '../dist',
       emptyOutDir: true,
     },
     resolve: {

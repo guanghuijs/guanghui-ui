@@ -2,22 +2,29 @@ import { CountDownProps, ToastOptions, UseCountDownType } from './type';
 
 declare module 'guanghui-ui' {
   export {
-    HButton,
-    HCalendar,
-    HCard,
-    HCheckbox,
-    HCountDown,
-    HDivider,
-    HIcon,
-    HLoading,
-    HPopup,
-    HProgressBar,
-    HSpace,
-    HStepper,
-    HSwitch,
-    HTree,
-    HVerificationCode,
-  } from '#/components';
+    Button,
+    Calendar,
+    Card,
+    Checkbox,
+    CountDown,
+    Collapse,
+    CollapseItem,
+    Divider,
+    Empty,
+    Icon,
+    Loading,
+    NavBar,
+    Popup,
+    ProgressBar,
+    Rate,
+    Space,
+    Stepper,
+    SwiperCell,
+    Switch,
+    Tree,
+    VerificationCode,
+    Upload,
+  };
   export function toast(options: ToastOptions): void;
   export function hiddenToast(): void;
   export function useCountDown(props?: CountDownProps): UseCountDownType;

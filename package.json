@@ -4,7 +4,7 @@
   "private": false,
   "scripts": {
     "dev": "vite test dev",
-    "build": "test build",
+    "build": "vite build test",
     "preview": "test preview",
     "build:lib": "run-p build-only",
     "test:unit": "vitest --environment jsdom --root src/",

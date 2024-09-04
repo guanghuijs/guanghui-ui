@@ -41,6 +41,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           # 项目配置的打包目录名称
-          folder: preview
+          folder: dist
           # 提交分支名
           branch: pages

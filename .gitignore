@@ -18,7 +18,7 @@ pnpm-lock.yaml
 /cypress/videos/
 /cypress/screenshots/
 /lib
-/preview
+/dist
 
 # Editor directories and files
 .vscode/*

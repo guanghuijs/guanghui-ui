@@ -6,7 +6,6 @@ const metaRoutes = routes.map((item) => {
   return Object.assign(item, { meta: routeMetaList[item.name as string] });
 });
 console.log(metaRoutes);
-export { metaRoutes };
 
 const router = createRouter({
   history: createWebHashHistory(),
